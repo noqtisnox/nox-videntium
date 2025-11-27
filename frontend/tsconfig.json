@@ -9,6 +9,7 @@
     "paths": {
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
+      "@types/*": ["types/*"],
     }
   }
 }

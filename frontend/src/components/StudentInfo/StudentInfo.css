@@ -1,0 +1,93 @@
+.student-info-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    border: 1px solid #ebebeb;
+}
+
+.student-info__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 0.75rem;
+}
+
+.pfp-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #0ea5e9;
+    object-fit: cover;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.student-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.student-email {
+    font-size: 0.875rem;
+    color: #777;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    width: 150px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0.75rem;
+    color: #444;
+}
+
+@media (min-width: 640px) {
+    .details-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.detail-item {
+    padding: 0.6rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.4rem;
+}
+
+.detail-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 0.2rem;
+}
+
+.detail-value {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.detail-grade {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0ea5e9;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid;
+}
+
+.is-submitted { color: #0d9488; background-color: #d1fae5; border-color: #10b981; }
+.is-late { color: #b45309; background-color: #fef3c7; border-color: #f59e0b; }
+.is-graded { color: #2563eb; background-color: #eff6ff; border-color: #3b82f6; }
+.is-none, .is-default { color: #dc2626; background-color: #fee2e2; border-color: #ef4444; }
