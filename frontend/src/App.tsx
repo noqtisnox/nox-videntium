@@ -1,13 +1,10 @@
-import StudentCard from "@components/StudentCard";
+import StudentList from '@components/StudentList';
 
 function App() {
   return (
-    <>
-      <StudentCard id={'1'} submissionStatus={'none'} />
-      <StudentCard id={'2'} submissionStatus={'submitted'} />
-      <StudentCard id={'3'} submissionStatus={'late'} />
-      <StudentCard id={'4'} submissionStatus={'graded'} />
-    </>
+    <div className='bg-blue-100 h-full'>
+      <StudentList groupId={'1'} assignmentId={'1'} />
+    </div>
   );
 }
 
