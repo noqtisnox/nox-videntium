@@ -1,0 +1,53 @@
+#=================================================================
+# GLOBAL IGNORING RULES (Applies to all subdirectories)
+#=================================================================
+
+# Ignore common operating system junk and editors
+
+.DS_Store
+.env
+.idea/
+.vscode/
+Thumbs.db
+*.log
+*.sqlite3
+db.sqlite3
+
+#=================================================================
+# Python / Django Specific
+#=================================================================
+
+venv/
+env/
+pycache/
+__pycache__/
+*.pyc
+*.o
+*.so
+
+#=================================================================
+# Django specific
+#=================================================================
+
+# Ignore Django media and static files collected by collectstatic
+/backend/media/
+/backend/static/
+/backend/settings/local.py
+/backend/settings/production.py
+/backend/settings_local.py
+
+#=================================================================
+# FRONTEND / React Specific
+#=================================================================
+/frontend/node_modules
+/frontend/build
+/frontend/dist
+
+/frontend/npm-debug.log*
+/frontend/yarn-error.log
+/frontend/.eslintcache
+
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
