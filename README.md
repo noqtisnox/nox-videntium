@@ -8,7 +8,7 @@
 
 <div align="center">
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 To get this project running locally, you need Python (3.10+) and Node.js (18+).
 
-### 1. Backend Setup (Django)
+### 1. Backend Setup (FastAPI)
 
 Navigate to the backend directory, set up the virtual environment, and install dependencies.
 
@@ -33,35 +33,16 @@ Navigate to the backend directory, set up the virtual environment, and install d
     source venv/bin/activate  # On Windows, use: venv\Scripts\activate
     ```
 
-3. Install Python dependencies (including Django and DRF)
+3. Install Python dependencies
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Create the database migrations
+4. Run the server
 
     ```bash
-    python manage.py makemigrations
-    ```
-
-5. Apply database migrations
-
-    ```bash
-    python manage.py migrate
-    ```
-
-6. Create a superuser to access the admin panel
-
-    ```bash
-    python manage.py createsuperuser
-    ```
-
-7. Start the Django development server
-
-    ```bash
-    python manage.py runserver
-    # Server will run at http://127.0.0.1:8000/
+    uvicorn app.main:app --reload
     ```
 
 ### 2. Frontend Setup (React)
