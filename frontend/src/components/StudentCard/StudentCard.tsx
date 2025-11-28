@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SubmissionStatus } from '@types/types';
+import type { SubmissionStatus } from '../../types/types';
 
 import placeholderImg from '@assets/img/rem-pfp.jpg';
 import './StudentCard.css'; 

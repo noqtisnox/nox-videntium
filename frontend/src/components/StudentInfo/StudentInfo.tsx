@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SubmissionStatus, StudentDetails } from '@types/types';
+import type { StudentDetails } from '../../types/types';
 import placeholderImg from '@assets/img/rem-pfp.jpg'; 
 import './StudentInfo.css'; 
 

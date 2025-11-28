@@ -3,7 +3,7 @@ import StudentInfo from '@components/StudentInfo';
 import GradingForm from '@components/GradingForm';
 import AssignmentViewer from '@components/AssignmentViewer';
 
-import { type SubmissionStatus, type StudentDetails } from '@types/types';
+import { type SubmissionStatus, type StudentDetails } from './types/types';
 
 import testPDF from '@assets/pdf/test-pdf.pdf';
 

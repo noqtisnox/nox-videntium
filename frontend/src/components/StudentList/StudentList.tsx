@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import StudentCard from '@components/StudentCard';
-import { type SubmissionStatus, type Student, type FilterStatus } from '@types/types';
+import { type SubmissionStatus, type Student, type FilterStatus } from '../../types/types';
 
 const DUMMY_STUDENTS: Student[] = [
  { id: 's1', name: 'Alice Johnson', status: 'submitted' as SubmissionStatus },
