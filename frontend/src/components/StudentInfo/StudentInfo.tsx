@@ -49,12 +49,6 @@ const StudentInfo: React.FC<Props> = ({ data }) => {
      <p className='detail-label'>Current Grade</p>
      <p className='detail-grade'>{currentGrade}</p>
     </div>
-    
-    <div className='detail-item'>
-     <p className='detail-label'>Assignment ID</p>
-     <p className='detail-value'>{data.id}</p>
-    </div>
-
    </div>
   </div>
  );

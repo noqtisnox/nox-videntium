@@ -27,22 +27,20 @@
     gap: 0.5rem;
 }
 
-.pfp-image {
-    width: 3rem;
-    height: 3rem;
+.student-card__content .pfp-image {
+    width: 2rem;
+    height: 2rem;
     border: 1px solid black;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.student-name {
+.student-card__content .student-name {
     margin: 0;
     color: #333;
-}
-
-.student-card .student-name {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .status-strip {

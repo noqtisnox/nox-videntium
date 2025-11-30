@@ -15,7 +15,7 @@
     margin-bottom: 0.75rem;
 }
 
-.pfp-image {
+.student-info__header .pfp-image {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -24,14 +24,14 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.student-name {
-    font-size: 1.5rem;
-    font-weight: 700;
+.student-info__header .student-name {
+    font-size: 1.4rem;
+    font-weight: 400;
     color: #222;
 }
 
-.student-email {
-    font-size: 0.875rem;
+.student-info__header .student-email {
+    font-size: 1rem;
     color: #777;
 
     white-space: nowrap;
@@ -52,6 +52,10 @@
     .details-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+}
+
+.details-grid .detail-item:nth-child(3) {
+    grid-column: 1 / -1;
 }
 
 .detail-item {
