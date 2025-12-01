@@ -42,7 +42,7 @@ Navigate to the backend directory, set up the virtual environment, and install d
 4. Run the server
 
     ```bash
-    uvicorn app.main:app --reload
+    uvicorn main:app --reload
     ```
 
 ### 2. Frontend Setup (React)
