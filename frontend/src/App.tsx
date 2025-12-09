@@ -1,26 +1,18 @@
+import { useState } from 'react';
 import StudentList from '@components/StudentList';
 import StudentInfo from '@components/StudentInfo';
 import GradingForm from '@components/GradingForm';
 import AssignmentViewer from '@components/AssignmentViewer';
 
-import { type SubmissionStatus, type StudentDetails } from './types/types';
+import { type StudentDetails } from './types/types';
 
 import testPDF from '@assets/pdf/test-pdf.pdf';
 
 import './App.css';
 
-const DUMMY_STUDENT_DETAILS: StudentDetails = {
-    id: 'a123',
-    name: 'Charlie Brown',
-    email: 'charlie.brown@example.com',
-    submissionStatus: 'late' as SubmissionStatus,
-    lastUpdated: '2025-11-26 10:45 AM',
-    currentGrade: 'N/A',
-};
-
 function App() {
-  const selectedStudent = DUMMY_STUDENT_DETAILS;
-  
+  const [selectedStudent, setSelectedStudent] = useState<StudentDetails | null>(null);
+
   return (
     <div className='app-background'> 
       <div className='app-dashboard-wrapper'> 
@@ -28,7 +20,7 @@ function App() {
           <div className='sidebar__header'>
               <h1 className='header-title'>Class Roster</h1>
           </div>
-          <StudentList groupId={'1'} assignmentId={'1'} />
+          <StudentList groupId={'1'} assignmentId={'1'} onSelect={setSelectedStudent} />
         </div>
 
         <div className='dashboard__main-content'>

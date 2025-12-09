@@ -8,15 +8,16 @@ type Props = {
   id: string;
   name: string;
   submissionStatus: SubmissionStatus;
+  onSelect?: () => void;
 }
 
-const StudentCard: React.FC<Props> = ({ id, name, submissionStatus }) => {
-  console.log(id); 
+const StudentCard: React.FC<Props> = ({ id, name, submissionStatus, onSelect }) => {
+  console.log(id);
   
   const statusClass = `status-strip is-${submissionStatus}`;
   
   return (
-    <div className='student-card'>
+    <div className='student-card' role="button" tabIndex={0} onClick={onSelect} onKeyPress={(e) => { if (e.key === 'Enter') onSelect && onSelect(); }}>
       <span className='student-card__content'>
         <img 
           className='pfp-image'
